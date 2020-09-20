@@ -87,6 +87,7 @@ C:\ITFC_DCMS\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\EntityFramework.dll
 C:\ITFC_DCMS\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\EntityFramework.SqlServer.dll
 C:\ITFC_DCMS\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\EntityFramework.xml
 C:\ITFC_DCMS\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\EntityFramework.SqlServer.xml
+C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.csproj.CoreCompileInputs.cache
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\DCMS_APIServices.dll.config
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\DCMS_APIServices.dll
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\DCMS_APIServices.pdb
@@ -171,8 +172,6 @@ C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Sy
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\System.Web.Http.xml
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\System.Web.Http.WebHost.xml
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.csprojAssemblyReference.cache
-C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.csproj.CoreCompileInputs.cache
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.csproj.CopyComplete
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.dll
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.pdb

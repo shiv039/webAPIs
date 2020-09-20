@@ -1,8 +1,5 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using DCMS_APIServices.Services;
 
 namespace DCMS_APIServices.Models
@@ -98,7 +95,8 @@ namespace DCMS_APIServices.Models
                 approverStack.ForEach(x => x.Status = "Pending");
                 ctx.SaveChanges();
             }
-                return true;
+
+            return true;
         }
     }
 } 
