@@ -6,6 +6,8 @@ using System.Net.Http;
 using System.Web.Http;
 
 using DCMS_APIServices.Models;
+using DCMS_APIServices.Services;
+using Newtonsoft.Json;
 
 namespace DCMS_APIServices.Controllers
 {
@@ -15,8 +17,9 @@ namespace DCMS_APIServices.Controllers
         public string GetApproversDetails(string refNo)
         {
             ApproversModel approvers = new ApproversModel();
+            List<ApproverStack> approverStacks = approvers.GetApprovers(refNo);
 
-            return approvers.GetApprovers(refNo);
+            return JsonConvert.SerializeObject(approverStacks);
         }
 
         [HttpGet]
@@ -28,14 +31,25 @@ namespace DCMS_APIServices.Controllers
         }
 
         [HttpPost]
-        public string AddApprovers()
+        public void AddApprovers(HttpRequestMessage approversData)
         {
-            return "PushApprovers";
+            string json = approversData.Content.ReadAsStringAsync().Result;
+            ApproversService approversService = new ApproversService();
+            approversService.AddApprovers(json);
         }
 
-        public string UpdateApproverStatus(string refNo, int orderNo)
+        [HttpGet]
+        public void UpdateApproverStatus(string refNo, string role, string email)
         {
-            return "UpdateApproverStatus";
+            ApproversModel approvers = new ApproversModel();
+            approvers.UpdateStatus(refNo, role, email);
+        }
+
+        [HttpGet]
+        public void ResetApprovers(string refNo)
+        {
+            ApproversModel approvers = new ApproversModel();
+            approvers.Reset(refNo);
         }
     }
 }
