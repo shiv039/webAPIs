@@ -7,6 +7,7 @@
       <Diagram DiagramId="795cbfd70ff24c7e9c8046576862cff2" Name="Diagram1">
         <EntityTypeShape EntityType="ITFC_DCMSModel.ApproverStack" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ITFC_DCMSModel.AuditTrial" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ITFC_DCMSModel.Notification" Width="1.5" PointX="5.125" PointY="1.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

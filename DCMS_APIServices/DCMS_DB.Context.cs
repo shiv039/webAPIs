@@ -27,5 +27,6 @@ namespace DCMS_APIServices
     
         public virtual DbSet<ApproverStack> ApproverStacks { get; set; }
         public virtual DbSet<AuditTrial> AuditTrials { get; set; }
+        public virtual DbSet<Notification> Notifications { get; set; }
     }
 }

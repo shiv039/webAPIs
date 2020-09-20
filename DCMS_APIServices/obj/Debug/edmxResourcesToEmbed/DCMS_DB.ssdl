@@ -26,8 +26,19 @@
     <Property Name="Comment" Type="nvarchar(max)" />
     <Property Name="RefNo" Type="nvarchar" MaxLength="30" Nullable="false" />
   </EntityType>
+  <EntityType Name="Notification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NotifMsg" Type="nvarchar" MaxLength="500" />
+    <Property Name="Category" Type="nvarchar" MaxLength="50" />
+    <Property Name="ReadStatus" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityContainer Name="ITFC_DCMSModelStoreContainer">
     <EntitySet Name="ApproverStack" EntityType="Self.ApproverStack" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="AuditTrial" EntityType="Self.AuditTrial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Notification" EntityType="Self.Notification" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>
