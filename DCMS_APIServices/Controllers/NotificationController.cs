@@ -5,11 +5,16 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
+using System.Web.Http.OData;
 
 namespace DCMS_APIServices.Controllers
 {
+   
+    [EnableCors(origins: "https://dmcs-dev.itfc-idb.org", headers: "*", methods: "*")]
     public class NotificationController : ApiController
     {
+        [EnableQuery]
         public IEnumerable<Notification> Get()
         {
             using (ITFC_DCMSEntities entities = new ITFC_DCMSEntities())
