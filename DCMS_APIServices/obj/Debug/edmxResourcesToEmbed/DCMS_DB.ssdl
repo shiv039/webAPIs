@@ -35,6 +35,8 @@
     <Property Name="NotifMsg" Type="nvarchar" MaxLength="500" />
     <Property Name="Category" Type="nvarchar" MaxLength="50" />
     <Property Name="ReadStatus" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedTime" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityContainer Name="ITFC_DCMSModelStoreContainer">
     <EntitySet Name="ApproverStack" EntityType="Self.ApproverStack" Schema="dbo" store:Type="Tables" />

@@ -40,5 +40,7 @@
     <Property Name="NotifMsg" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="Category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ReadStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

@@ -32,6 +32,8 @@
     <EntitySetMapping Name="Notifications">
       <EntityTypeMapping TypeName="ITFC_DCMSModel.Notification">
         <MappingFragment StoreEntitySet="Notification">
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
           <ScalarProperty Name="ReadStatus" ColumnName="ReadStatus" />
           <ScalarProperty Name="Category" ColumnName="Category" />
           <ScalarProperty Name="NotifMsg" ColumnName="NotifMsg" />

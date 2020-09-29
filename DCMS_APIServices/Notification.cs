@@ -19,5 +19,13 @@ namespace DCMS_APIServices
         public string NotifMsg { get; set; }
         public string Category { get; set; }
         public string ReadStatus { get; set; }
+        public string CreatedDate { get; set; }
+        public string CreatedTime { get; set; }
+    }
+
+    public partial class NotificationPatch
+    {
+        
+        public string ReadStatus { get; set; }
     }
 }

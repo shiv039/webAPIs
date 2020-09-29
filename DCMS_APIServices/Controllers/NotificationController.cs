@@ -58,6 +58,7 @@ namespace DCMS_APIServices.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
             }
         }
+        
         public HttpResponseMessage Put(int id, [FromBody] Notification notification)
         {
             try
@@ -75,6 +76,8 @@ namespace DCMS_APIServices.Controllers
                         entity.NotifMsg = notification.NotifMsg;
                         entity.ReadStatus = notification.ReadStatus;
                         entity.Category = notification.Category;
+                        entity.CreatedDate = notification.CreatedDate;
+                        entity.CreatedTime = notification.CreatedTime;
                         entities.SaveChanges();
                         return Request.CreateResponse(HttpStatusCode.OK, notification);
 
@@ -87,5 +90,35 @@ namespace DCMS_APIServices.Controllers
             }
 
         }
+
+        [HttpPatch]
+        public HttpResponseMessage Patch(int id, [FromBody] NotificationPatch notification)
+        {
+            try
+            {
+                using (ITFC_DCMSEntities entities = new ITFC_DCMSEntities())
+                {
+                    var entity = entities.Notifications.FirstOrDefault(e => e.ID == id);
+                    if (entity == null)
+                    {
+                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Record Not Found");
+                    }
+                    else
+                    {
+                        entity.ReadStatus = notification.ReadStatus;
+                      
+                        entities.SaveChanges();
+                        return Request.CreateResponse(HttpStatusCode.OK, notification);
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+
+        }
+
     }
-    }
+}
