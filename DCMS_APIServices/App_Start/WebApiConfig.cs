@@ -13,6 +13,7 @@ namespace DCMS_APIServices
         {
             
             config.EnableCors();
+
             // Web API configuration and services
             config.AddODataQueryFilter();
             // Web API routes
