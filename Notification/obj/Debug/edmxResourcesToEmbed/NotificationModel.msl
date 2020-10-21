@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ITFC_DCMS_DEVModelStoreContainer" CdmEntityContainer="ITFC_DCMS_DEVEntities">
+    <EntitySetMapping Name="Notifications">
+      <EntityTypeMapping TypeName="ITFC_DCMS_DEVModel.Notification">
+        <MappingFragment StoreEntitySet="Notification">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="NotifMsg" ColumnName="NotifMsg" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="ReadStatus" ColumnName="ReadStatus" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

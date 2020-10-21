@@ -16,6 +16,7 @@ namespace DCMS_APIServices
 
             // Web API configuration and services
             config.AddODataQueryFilter();
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 

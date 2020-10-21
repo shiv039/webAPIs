@@ -268,6 +268,7 @@
     <Content Include="DCMS_DB.edmx.diagram">
       <DependentUpon>DCMS_DB.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\ApprovalHandler.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

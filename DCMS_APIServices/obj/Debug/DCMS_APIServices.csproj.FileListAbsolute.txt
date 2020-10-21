@@ -175,7 +175,6 @@ C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Mi
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.csproj.CopyComplete
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.dll
 C:\Users\mukhthar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.pdb
-C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Microsoft.Data.OData.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\DCMS_APIServices.dll.config
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\DCMS_APIServices.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\DCMS_APIServices.pdb
@@ -263,6 +262,7 @@ C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\EntityFramework.SqlServer.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Microsoft.AspNet.OData.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Microsoft.Data.Edm.xml
+C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Microsoft.Data.OData.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Microsoft.Extensions.DependencyInjection.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\Microsoft.OData.Core.xml
@@ -311,6 +311,7 @@ C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\ru\System.Spatial.resources.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.csprojAssemblyReference.cache
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.csproj.CoreCompileInputs.cache
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.csproj.CopyComplete
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\obj\Debug\DCMS_APIServices.dll
