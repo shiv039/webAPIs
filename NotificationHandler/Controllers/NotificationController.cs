@@ -11,7 +11,7 @@ using System.Web.Http.OData;
 namespace NotificationHandler.Controllers
 {
 
-    [EnableCors(origins: "https://dmcs-dev.itfc-idb.org", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class NotificationController : ApiController
     {
         [EnableQuery]

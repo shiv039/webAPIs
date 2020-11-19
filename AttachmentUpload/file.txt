@@ -1,0 +1,6 @@
+2020-10-28 09:49:58.0242|INFO|AttachmentUpload.Services.AttachmentService|Hello world
+2020-11-09 15:05:43.7162|INFO|AttachmentUpload.Services.AttachmentService|Hello world
+2020-11-10 16:27:54.2397|INFO|AttachmentUpload.Services.AttachmentService|Hello world
+2020-11-10 16:27:55.8847|ERROR|AttachmentUpload.Services.AttachmentService|Goodbye cruel world
+2020-11-10 16:44:21.1557|INFO|AttachmentUpload.Services.AttachmentService|Hello world
+2020-11-10 16:44:30.4229|ERROR|AttachmentUpload.Services.AttachmentService|Goodbye cruel world

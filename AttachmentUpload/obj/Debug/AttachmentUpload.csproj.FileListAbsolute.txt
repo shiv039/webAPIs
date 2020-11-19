@@ -1,5 +1,3 @@
-C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\AttachmentUpload.dll.config
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\AttachmentUpload.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\AttachmentUpload.pdb
@@ -10,9 +8,11 @@ C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\csi.exe.config
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\csi.rsp
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.CSharp.Core.targets
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
@@ -57,6 +57,7 @@ C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\Microsoft.SharePoint.Client.Runtime.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\Newtonsoft.Json.dll
+C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\NLog.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\System.Net.Http.Formatting.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\System.Web.Cors.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\System.Web.Helpers.dll
@@ -72,6 +73,7 @@ C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\WebGrease.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\Microsoft.SharePoint.Client.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\Microsoft.SharePoint.Client.Runtime.xml
+C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\NLog.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\System.Web.Http.Cors.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\Newtonsoft.Json.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\System.Net.Http.Formatting.xml
@@ -86,7 +88,6 @@ C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\System.Web.WebPages.Razor.xml
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\Antlr3.Runtime.pdb
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\obj\Debug\AttachmentUpload.csprojAssemblyReference.cache
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\obj\Debug\AttachmentUpload.csproj.CoreCompileInputs.cache
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\obj\Debug\AttachmentUpload.csproj.CopyComplete
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\AttachmentUpload\obj\Debug\AttachmentUpload.dll

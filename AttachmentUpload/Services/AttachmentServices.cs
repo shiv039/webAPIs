@@ -4,14 +4,16 @@ using Microsoft.SharePoint.Client.DocumentSet;
 using System;
 using System.Configuration;
 using System.IO;
+using System.Net;
 
 namespace AttachmentUpload.Services
 {
+    
     public static class AttachmentService
     {
         static readonly string WebURL = ConfigurationManager.AppSettings["MemoWebURL"]; 
-        static readonly string contentID = ConfigurationManager.AppSettings["MemoDocSetID"]; 
-
+        static readonly string contentID = ConfigurationManager.AppSettings["MemoDocSetID"];
+        private static readonly NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
 
         public static Microsoft.SharePoint.Client.File UploadFiletoLibrary(AttachmentModel attachmentData)
         {
@@ -31,10 +33,33 @@ namespace AttachmentUpload.Services
             pathString = pathString + "\\" + fileName;
             Folder Parentfolder = library.RootFolder;
             System.IO.File.WriteAllBytes(pathString, Convert.FromBase64String(attachmentData.Filebase));
-
             string filebasenames = pathString;
             fileSize = new FileInfo(filebasenames).Length;
             string uniqueFileName = Path.GetFileName(filebasenames);
+
+            ContentType ct = context.Web.ContentTypes.GetById(contentID);
+            context.Load(ct);
+            context.ExecuteQuery();
+
+            DocumentSet.Create(context, Parentfolder, attachmentData.RefID, ct.Id);
+            try
+            {
+                Logger.Info("Hello world");
+                context.ExecuteQuery();
+            }
+            catch (ServerException ex)
+            {
+                Logger.Error(ex, "Goodbye cruel world");
+                if (ex.Message.Contains("A document, folder or document set with the name '" + attachmentData.RefID + "' already exists."))
+                {
+
+                }
+                else
+                {
+                    throw ex;
+                }
+            }
+
             if (fileSize <= blockSize)
             {
                 // Use regular approach.
@@ -47,43 +72,7 @@ namespace AttachmentUpload.Services
                         Overwrite = true
                     };
 
-                    ContentType ct = context.Web.ContentTypes.GetById(contentID);
-                    context.Load(ct);
-                    context.ExecuteQuery();
-
-                    //// Create a new document set
-                    //// A new document set will be created in "Documents" library as "Vijai Documents" under which you can add the documents
-                    
-                    //DocumentSet setExists = DocumentSet.GetDocumentSet(context, Parentfolder);
-                    //context.ExecuteQuery();
-
-                   // if (setExists. == null)
-                   // {
-                   //     DocumentSet.Create(context, Parentfolder, attachmentData.RefID, ct.Id);
-                   //     context.ExecuteQuery();
-                   // }
-
-                    DocumentSet.Create(context, Parentfolder, attachmentData.RefID, ct.Id);
-                    try
-                    {
-                        context.ExecuteQuery();
-                    }
-                    catch (ServerException ex)
-                    {
-                        if (ex.Message.Contains("A document, folder or document set with the name '"+ attachmentData.RefID + "' already exists."))
-                        {
-                            
-                        }
-                        else
-                        {
-                            throw ex;
-                        }
-                    }
-                    
-
-                    var fileServerRelativeUrl = WebURL + "/" + "Library_DocSet/" + attachmentData.RefID + "/" ;
-                    //Folder documentSetFolder = context.Web.GetFolderByServerRelativeUrl(fileServerRelativeUrl);
-
+                
                     fileInfo.Url = WebURL + "/" + "Library_DocSet/" + attachmentData.RefID +"/"+ fileName;
 
                     uploadFile = library.RootFolder.Files.Add(fileInfo);
@@ -146,6 +135,8 @@ namespace AttachmentUpload.Services
                                         Url = uniqueFileName,
                                         Overwrite = true
                                     };
+
+                                    fileInfo.Url = WebURL + "/" + "Library_DocSet/" + attachmentData.RefID +"/"+ fileName;
                                     uploadFile = library.RootFolder.Files.Add(fileInfo);
 
                                     // Start upload by uploading the first slice.
@@ -216,6 +207,35 @@ namespace AttachmentUpload.Services
                 }
             }
             return uploadFile;
+        }
+    
+        public static bool DeleteFilefromLibrary(AttachmentModel attachmentData)
+        {
+            bool returnVal = false;
+            Microsoft.SharePoint.Client.FileCollection uploadFile = null;
+
+            ClientContext context = new ClientContext(new Uri(WebURL));
+            // clientcontext.Web.Lists.GetById - This option also can be used to get the list using List GUID
+            // This value is NOT List internal name
+            List library = context.Web.Lists.GetByTitle("Library_DocSet");
+            string docSetUrl = attachmentData.RefID;
+
+            uploadFile = library.RootFolder.Folders.GetByUrl(docSetUrl).Files;
+            // Option 1: Get Item by ID
+            context.Load(uploadFile);
+            context.ExecuteQuery();
+            foreach (var file in uploadFile)
+            {
+                
+                if (file.Title == attachmentData.Title)
+                {
+                    file.DeleteObject();
+                    context.ExecuteQuery();
+                    return true;                }
+                
+            }
+
+            return returnVal;
         }
     }
 }

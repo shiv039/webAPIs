@@ -1,6 +1,9 @@
 ﻿using AttachmentUpload.Models;
 using AttachmentUpload.Services;
 using System;
+using System.Configuration;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
@@ -9,7 +12,8 @@ namespace AttachmentUpload.Controllers
     [EnableCors(origins: "*", headers:"*", methods:"*")]
     public class UploadDocumentsController : ApiController
     {
-        
+        static readonly string WebURL = ConfigurationManager.AppSettings["MemoWebURL"];
+
         [ActionName("UploadDocs")]
         public string UploadDocs(AttachmentModel attachmentData)
         
@@ -17,7 +21,9 @@ namespace AttachmentUpload.Controllers
             try
             {
                 AttachmentService.UploadFiletoLibrary(attachmentData);
-                return "Success";
+                var fileLocation = WebURL + "/" + "Library_DocSet/" + attachmentData.RefID + "/" + attachmentData.Title;
+                return "{\"status\":\"Success\", \"Link\":\"" + fileLocation + "\", \"FileName\":\"" + attachmentData.Title + "\"}";
+                
             }
             catch (Exception e)
             {
