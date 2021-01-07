@@ -173,6 +173,9 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Properties\PublishProfiles\AttachmentAPI.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

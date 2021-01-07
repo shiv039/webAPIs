@@ -23,7 +23,7 @@ namespace PersonalizationData.Controllers
             }
 
         }
-        public HttpResponseMessage Get(int id)
+        /*public HttpResponseMessage Get(int id)
         {
             using (PersonalizationDataDB entities = new PersonalizationDataDB())
             {
@@ -37,7 +37,7 @@ namespace PersonalizationData.Controllers
                     return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Record not found");
                 }
             }
-        }
+        }*/
 
         public HttpResponseMessage Post([FromBody] UserPersonalizationData personalizationData)
         {
@@ -59,7 +59,7 @@ namespace PersonalizationData.Controllers
             }
         }
 
-        public HttpResponseMessage Put(int id, [FromBody] UserPersonalizationData personalizationData)
+        /*public HttpResponseMessage Put(int id, [FromBody] UserPersonalizationData personalizationData)
         {
             try
             {
@@ -87,7 +87,7 @@ namespace PersonalizationData.Controllers
             }
 
         }
-
+*/
         [HttpPatch]
         public HttpResponseMessage Patch(int id, [FromBody] UserPersonalizationDataPatch personalizationData)
         {

@@ -21,11 +21,16 @@ namespace NotificationHandler
         public string ReadStatus { get; set; }
         public string CreatedDate { get; set; }
         public string CreatedTime { get; set; }
+        public string UserEmail { get; set; }
+        public string EmailNotification { get; set; }
+        public string EmailTo { get; set; }
+        public string EmailCc { get; set; }
+        public string EmailBody { get; set; }
+        public string ItemURL { get; set; }
+        public string NotificationSource { get; set; }
     }
-
     public partial class NotificationPatch
     {
-
         public string ReadStatus { get; set; }
     }
 }

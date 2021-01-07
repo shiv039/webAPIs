@@ -211,6 +211,18 @@
     <Content Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\DMCSCustomService - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - ReadOnly - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\dmcscustomservice-Notification - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\dmcscustomservice-Notification - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\dmcscustomservice-Notification - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\dmcscustomservice-Notification - ReadOnly - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\dmcscustomservice-Notification - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\dmcscustomservice-Notification - Web Deploy1.pubxml" />
     <None Include="Properties\PublishProfiles\NotificationHandler.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

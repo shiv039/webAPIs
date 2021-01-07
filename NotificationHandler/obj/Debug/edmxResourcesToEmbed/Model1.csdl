@@ -11,6 +11,13 @@
     <Property Name="ReadStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="CreatedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="CreatedTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UserEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmailNotification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmailTo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="EmailCc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="EmailBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ItemURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NotificationSource" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityContainer Name="ITFC_DCMS_DEVEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Notifications" EntityType="Self.Notification" />

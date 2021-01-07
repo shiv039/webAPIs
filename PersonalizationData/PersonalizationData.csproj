@@ -400,7 +400,19 @@
     <Content Include="PersonalizationDataModel.edmx.diagram">
       <DependentUpon>PersonalizationDataModel.edmx</DependentUpon>
     </Content>
-    <None Include="Properties\PublishProfiles\PersonalizationData.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomAPI - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomAPI - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomAPI - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomAPI - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - ReadOnly - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\DMCSCustomService - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\dmcscustomservice-PersonalizationData - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\dmcscustomservice-PersonalizationData - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\dmcscustomservice-PersonalizationData - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

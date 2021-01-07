@@ -124,6 +124,6 @@ C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\NotificationHandler\o
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\NotificationHandler\obj\Debug\NotificationHandler.csproj.CopyComplete
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\NotificationHandler\obj\Debug\NotificationHandler.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\NotificationHandler\obj\Debug\NotificationHandler.pdb
-C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\NotificationHandler\obj\Debug\NotificationHandler.csprojAssemblyReference.cache
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\NotificationHandler\bin\NLog.dll
 C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\NotificationHandler\bin\NLog.xml
+C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\NotificationHandler\obj\Debug\NotificationHandler.csprojAssemblyReference.cache

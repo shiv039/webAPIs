@@ -4,3 +4,7 @@
 2020-11-10 16:27:55.8847|ERROR|AttachmentUpload.Services.AttachmentService|Goodbye cruel world
 2020-11-10 16:44:21.1557|INFO|AttachmentUpload.Services.AttachmentService|Hello world
 2020-11-10 16:44:30.4229|ERROR|AttachmentUpload.Services.AttachmentService|Goodbye cruel world
+2020-12-22 13:01:49.9602|INFO|AttachmentUpload.Services.AttachmentService|Hello world
+2020-12-23 12:12:11.0310|INFO|AttachmentUpload.Services.AttachmentService|Hello world
+2020-12-23 13:47:24.3542|INFO|AttachmentUpload.Services.AttachmentService|Hello world
+2021-01-04 14:16:01.9889|INFO|AttachmentUpload.Services.AttachmentService|Hello world

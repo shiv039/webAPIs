@@ -11,6 +11,13 @@
     <Property Name="ReadStatus" Type="nvarchar" MaxLength="50" />
     <Property Name="CreatedDate" Type="nvarchar" MaxLength="50" />
     <Property Name="CreatedTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailNotification" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailTo" Type="varchar" MaxLength="255" />
+    <Property Name="EmailCc" Type="varchar" MaxLength="255" />
+    <Property Name="EmailBody" Type="nvarchar(max)" />
+    <Property Name="ItemURL" Type="nvarchar(max)" />
+    <Property Name="NotificationSource" Type="varchar" MaxLength="255" />
   </EntityType>
   <EntityContainer Name="ITFC_DCMS_DEVModelStoreContainer">
     <EntitySet Name="Notification" EntityType="Self.Notification" Schema="dbo" store:Type="Tables" />

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="292036b2f5b54351b02e33857a2f90cb" Name="Diagram1" ZoomLevel="93">
+      <Diagram DiagramId="292036b2f5b54351b02e33857a2f90cb" Name="Diagram1" ZoomLevel="72">
         <EntityTypeShape EntityType="ITFC_DCMS_DEVModel.Notification" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>

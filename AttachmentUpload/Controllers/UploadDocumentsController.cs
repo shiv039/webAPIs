@@ -20,8 +20,12 @@ namespace AttachmentUpload.Controllers
         {
             try
             {
-                AttachmentService.UploadFiletoLibrary(attachmentData);
-                var fileLocation = WebURL + "/" + "Library_DocSet/" + attachmentData.RefID + "/" + attachmentData.Title;
+                Microsoft.SharePoint.Client.File uploadFile = AttachmentService.UploadFiletoLibrary(attachmentData);
+                if(uploadFile == null)
+                {
+                    throw new Exception("File Name Title is null");
+                }
+                var fileLocation = WebURL + "/" + "CommunicationAttachments/" + attachmentData.RefID + "/" + attachmentData.Title;
                 return "{\"status\":\"Success\", \"Link\":\"" + fileLocation + "\", \"FileName\":\"" + attachmentData.Title + "\"}";
                 
             }

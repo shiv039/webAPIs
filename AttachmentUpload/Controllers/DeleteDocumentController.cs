@@ -22,7 +22,7 @@ namespace AttachmentUpload.Controllers
             try
             {
                 AttachmentService.DeleteFilefromLibrary(attachmentData);
-                var fileLocation = WebURL + "/" + "Library_DocSet/" + attachmentData.RefID + "/" + attachmentData.Title;
+                var fileLocation = WebURL + "/" + "CommunicationAttachments/" + attachmentData.RefID + "/" + attachmentData.Title;
                 return "Success";
             }
             catch (Exception e)

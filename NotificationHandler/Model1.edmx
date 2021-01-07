@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ITFC_DCMS_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ITFC_DCMS_DEVModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Notification">
           <Key>
             <PropertyRef Name="ID" />
@@ -16,12 +16,18 @@
           <Property Name="ReadStatus" Type="nvarchar" MaxLength="50" />
           <Property Name="CreatedDate" Type="nvarchar" MaxLength="50" />
           <Property Name="CreatedTime" Type="nvarchar" MaxLength="50" />
+          <Property Name="UserEmail" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailNotification" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmailTo" Type="varchar" MaxLength="255" />
+          <Property Name="EmailCc" Type="varchar" MaxLength="255" />
+          <Property Name="EmailBody" Type="nvarchar(max)" />
+          <Property Name="ItemURL" Type="nvarchar(max)" />
+          <Property Name="NotificationSource" Type="varchar" MaxLength="255" />
         </EntityType>
         <EntityContainer Name="ITFC_DCMS_DEVModelStoreContainer">
           <EntitySet Name="Notification" EntityType="Self.Notification" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ITFC_DCMS_DEVModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -36,6 +42,13 @@
           <Property Name="ReadStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreatedDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreatedTime" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UserEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmailNotification" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmailTo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="EmailCc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="EmailBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ItemURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="NotificationSource" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="ITFC_DCMS_DEVEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Notifications" EntityType="Self.Notification" />
@@ -49,6 +62,13 @@
           <EntitySetMapping Name="Notifications">
             <EntityTypeMapping TypeName="ITFC_DCMS_DEVModel.Notification">
               <MappingFragment StoreEntitySet="Notification">
+                <ScalarProperty Name="NotificationSource" ColumnName="NotificationSource" />
+                <ScalarProperty Name="ItemURL" ColumnName="ItemURL" />
+                <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+                <ScalarProperty Name="EmailCc" ColumnName="EmailCc" />
+                <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
+                <ScalarProperty Name="EmailNotification" ColumnName="EmailNotification" />
+                <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="NotifMsg" ColumnName="NotifMsg" />

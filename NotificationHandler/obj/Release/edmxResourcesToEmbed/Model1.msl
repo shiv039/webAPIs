@@ -4,6 +4,13 @@
     <EntitySetMapping Name="Notifications">
       <EntityTypeMapping TypeName="ITFC_DCMS_DEVModel.Notification">
         <MappingFragment StoreEntitySet="Notification">
+          <ScalarProperty Name="NotificationSource" ColumnName="NotificationSource" />
+          <ScalarProperty Name="ItemURL" ColumnName="ItemURL" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="EmailCc" ColumnName="EmailCc" />
+          <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
+          <ScalarProperty Name="EmailNotification" ColumnName="EmailNotification" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
           <ScalarProperty Name="NotifMsg" ColumnName="NotifMsg" />
