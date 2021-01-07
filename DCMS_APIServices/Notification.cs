@@ -22,10 +22,4 @@ namespace DCMS_APIServices
         public string CreatedDate { get; set; }
         public string CreatedTime { get; set; }
     }
-
-    public partial class NotificationPatch
-    {
-        
-        public string ReadStatus { get; set; }
-    }
 }

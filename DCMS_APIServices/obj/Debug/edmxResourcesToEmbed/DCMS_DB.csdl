@@ -9,10 +9,10 @@
     <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="RefNo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="SecondDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="OrderNo" Type="Int32" Nullable="false" />
     <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="RoleCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Removable" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityType Name="AuditTrial">
     <Key>

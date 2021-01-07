@@ -9,10 +9,10 @@
     <Property Name="DisplayName" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="RefNo" Type="nvarchar" MaxLength="30" Nullable="false" />
     <Property Name="Designation" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="SecondDesignation" Type="nvarchar" MaxLength="50" />
     <Property Name="OrderNo" Type="int" Nullable="false" />
     <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="RoleCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Removable" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="AuditTrial">
     <Key>

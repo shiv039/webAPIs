@@ -11,8 +11,8 @@ namespace DCMS_APIServices.Models
             using (var ctx = new ITFC_DCMSEntities())
             {
                 List<ApproverStack> approverStacks = (from x in ctx.ApproverStacks
-                                                     where x.RefNo == refNo
-                                                     select x).ToList();
+                                                      where x.RefNo == refNo
+                                                      select x).ToList();
 
                 return approverStacks;
             }
@@ -23,17 +23,18 @@ namespace DCMS_APIServices.Models
             using (var ctx = new ITFC_DCMSEntities())
             {
                 List<string> approvers = (from x in ctx.ApproverStacks
-                                              where (x.RefNo == refNo) && (x.RoleCode == role) && (x.Status == status)
+                                          where (x.RefNo == refNo) && (x.RoleCode == role) && (x.Status == status)
                                           select x.Email).ToList<string>();
 
-                if(approvers.Count>0)
+                if (approvers.Count > 0)
                 {
                     ApproversService service = new ApproversService();
                     return service.GetApproversSemiColonSeperatedString(approvers);
-                } else
+                }
+                else
                 {
                     return "";
-                }                
+                }
             }
         }
 
@@ -57,8 +58,8 @@ namespace DCMS_APIServices.Models
                 List<ApproverStack> approverStack = (from x in ctx.ApproverStacks
                                                      where x.RefNo == refNo
                                                      select x).ToList();
-                
-                if(approverStack.Count>0)
+
+                if (approverStack.Count > 0)
                 {
                     ctx.ApproverStacks.RemoveRange(approverStack);
                     ctx.SaveChanges();
@@ -73,10 +74,10 @@ namespace DCMS_APIServices.Models
             using (var ctx = new ITFC_DCMSEntities())
             {
                 var approverStack = (from x in ctx.ApproverStacks
-                                               where (x.RefNo == refNo) && (x.RoleCode == role) && (x.Email == email)
-                                               select x).First();
+                                     where (x.RefNo == refNo) && (x.RoleCode == role) && (x.Email == email)
+                                     select x).First();
 
-                if(approverStack!=null)
+                if (approverStack != null)
                 {
                     approverStack.Status = "Completed";
                     ctx.SaveChanges();
@@ -99,4 +100,4 @@ namespace DCMS_APIServices.Models
             return true;
         }
     }
-} 
+}

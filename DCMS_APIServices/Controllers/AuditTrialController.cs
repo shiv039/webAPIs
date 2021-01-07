@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Net.Http;
 using System.Web.Http;
-
+using System.Web.Http.Cors;
 using DCMS_APIServices.Models;
 using Newtonsoft.Json;
 
 namespace DCMS_APIServices.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class AuditTrialController : ApiController
     {
         [HttpGet]
@@ -17,7 +18,7 @@ namespace DCMS_APIServices.Controllers
             List<AuditTrial> auditTrials = audit.GetAuditTrials(refNo);
 
             return JsonConvert.SerializeObject(auditTrials);
-        } 
+        }
 
         [HttpPost]
         public void Post(HttpRequestMessage data)

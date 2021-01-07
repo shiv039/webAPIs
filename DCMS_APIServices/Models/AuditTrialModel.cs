@@ -8,11 +8,11 @@ namespace DCMS_APIServices.Models
     {
         public List<AuditTrial> GetAuditTrials(string refNo)
         {
-            using (var ctx= new ITFC_DCMSEntities())
+            using (var ctx = new ITFC_DCMSEntities())
             {
                 List<AuditTrial> auditTrials = (from x in ctx.AuditTrials
-                                       where x.RefNo == refNo
-                                       select x).ToList();
+                                                where x.RefNo == refNo
+                                                select x).ToList();
 
                 return auditTrials;
             }
@@ -40,7 +40,7 @@ namespace DCMS_APIServices.Models
                 ctx.AuditTrials.RemoveRange(auditTrials);
                 ctx.SaveChanges();
             }
-            
+
             return true;
         }
     }

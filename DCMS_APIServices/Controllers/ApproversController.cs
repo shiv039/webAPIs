@@ -4,20 +4,24 @@ using System.Web.Http;
 using System.Web.Http.OData;
 using DCMS_APIServices.Models;
 using DCMS_APIServices.Services;
-using Newtonsoft.Json;
+using System.Linq;
+using System.Web.Http.Cors;
 
 namespace DCMS_APIServices.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ApproversController : ApiController
     {
         [HttpGet]
-        
-        public string GetApproversDetails(string refNo)
+        [EnableQuery]
+        public IEnumerable<ApproverStack> GetApproversDetails()
         {
-            ApproversModel approvers = new ApproversModel();
-            List<ApproverStack> approverStacks = approvers.GetApprovers(refNo);
 
-            return JsonConvert.SerializeObject(approverStacks);
+            using (var ctx = new ITFC_DCMSEntities())
+            {
+
+                return ctx.ApproverStacks.ToList();
+            }
         }
 
         [HttpGet]
@@ -29,6 +33,7 @@ namespace DCMS_APIServices.Controllers
         }
 
         [HttpPost]
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         public void AddApprovers(HttpRequestMessage approversData)
         {
             string json = approversData.Content.ReadAsStringAsync().Result;

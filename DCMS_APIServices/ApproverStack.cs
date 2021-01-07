@@ -19,9 +19,9 @@ namespace DCMS_APIServices
         public string DisplayName { get; set; }
         public string RefNo { get; set; }
         public string Designation { get; set; }
-        public string SecondDesignation { get; set; }
         public int OrderNo { get; set; }
         public string Status { get; set; }
         public string RoleCode { get; set; }
+        public bool Removable { get; set; }
     }
 }

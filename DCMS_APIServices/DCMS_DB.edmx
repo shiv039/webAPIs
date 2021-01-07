@@ -14,10 +14,10 @@
           <Property Name="DisplayName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="RefNo" Type="nvarchar" MaxLength="30" Nullable="false" />
           <Property Name="Designation" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="SecondDesignation" Type="nvarchar" MaxLength="50" />
           <Property Name="OrderNo" Type="int" Nullable="false" />
           <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="RoleCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Removable" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="AuditTrial">
           <Key>
@@ -61,10 +61,10 @@
           <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="RefNo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="SecondDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="OrderNo" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="RoleCode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Removable" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="AuditTrial">
           <Key>
@@ -104,12 +104,12 @@
           <EntitySetMapping Name="ApproverStacks">
             <EntityTypeMapping TypeName="ITFC_DCMSModel.ApproverStack">
               <MappingFragment StoreEntitySet="ApproverStack">
+                <ScalarProperty Name="Removable" ColumnName="Removable" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
                 <ScalarProperty Name="RefNo" ColumnName="RefNo" />
                 <ScalarProperty Name="Designation" ColumnName="Designation" />
-                <ScalarProperty Name="SecondDesignation" ColumnName="SecondDesignation" />
                 <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />

@@ -4,12 +4,12 @@
     <EntitySetMapping Name="ApproverStacks">
       <EntityTypeMapping TypeName="ITFC_DCMSModel.ApproverStack">
         <MappingFragment StoreEntitySet="ApproverStack">
+          <ScalarProperty Name="Removable" ColumnName="Removable" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
           <ScalarProperty Name="RefNo" ColumnName="RefNo" />
           <ScalarProperty Name="Designation" ColumnName="Designation" />
-          <ScalarProperty Name="SecondDesignation" ColumnName="SecondDesignation" />
           <ScalarProperty Name="OrderNo" ColumnName="OrderNo" />
           <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />

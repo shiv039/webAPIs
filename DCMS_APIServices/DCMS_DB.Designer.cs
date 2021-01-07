@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\shivakumar\Source\Repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\DCMS_DB.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\shivakumar\source\repos\ITFC_NET_WEB_API_Services\DCMS_APIServices\DCMS_DB.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
